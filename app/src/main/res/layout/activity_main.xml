@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="trader.shopping.market.com.permissionruntime.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="20sp"
+        android:text="Note this only grant petmission"/>
+    <Button
+        android:id="@+id/readContacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:text="Read Contact" />
+    <Button
+        android:id="@+id/readStorage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:text="Read Storage" />
+    <Button
+        android:id="@+id/getLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:text="getLocation" />
+    <TextView
+        android:id="@+id/setReadPermission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textStyle="bold"
+
+
+        android:layout_weight="1"/>
+    <TextView
+        android:id="@+id/readdata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_weight="1"/>
+    <TextView
+        android:id="@+id/readLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        android:gravity="center"
+        android:layout_weight="1"/>
+
+</LinearLayout>
