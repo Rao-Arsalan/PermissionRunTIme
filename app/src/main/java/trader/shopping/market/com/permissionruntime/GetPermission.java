@@ -47,13 +47,12 @@ public class GetPermission {
 
             if (request == 110) {
                 MainActivity.getLocationTextView().setText(MainActivity.getLocButton().getText()+" is set");
-            }
-            if (request == 111) {
+            }else if (request == 111) {
                 MainActivity.getStorageTextView().setText((MainActivity.getReadStorageButton().getText())+" is set");
-            }
-            if (request == 112) {
+            }else
+
                 MainActivity.getContactsTextView().setText(MainActivity.getReadContacts().getText()+" is set");
-            }
+
 
         }else{
 
