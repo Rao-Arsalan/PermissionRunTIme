@@ -45,11 +45,14 @@ public class GetPermission {
         if(ActivityCompat.checkSelfPermission(context,myPermission)== PackageManager.PERMISSION_GRANTED) {
             Log.i(TAG,"Permission Granted");
 
+
             if (request == 110) {
                 MainActivity.getLocationTextView().setText(MainActivity.getLocButton().getText()+" is set");
-            }else if (request == 111) {
+            }
+            else if (request == 111) {
                 MainActivity.getStorageTextView().setText((MainActivity.getReadStorageButton().getText())+" is set");
-            }else
+            }
+            else
 
                 MainActivity.getContactsTextView().setText(MainActivity.getReadContacts().getText()+" is set");
 

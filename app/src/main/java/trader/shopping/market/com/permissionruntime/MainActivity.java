@@ -74,18 +74,21 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
+
         if(savedInstanceState!=null) {
+
             getContactsTextView().setText(savedInstanceState.getString("contactTextView"));
             getStorageTextView().setText(savedInstanceState.getString("storageTextView"));
             getLocationTextView().setText(savedInstanceState.getString("locationTextView"));
 
         }
-        }
+    }
 
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
+
 
         outState.putString("contactTextView",getContactsTextView().getText().toString());
         outState.putString("storageTextView",getStorageTextView().getText().toString());
